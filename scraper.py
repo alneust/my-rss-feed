@@ -19,29 +19,25 @@ def build_full_rss():
         href="https://www.nationalreview.com/author/wesley-j-smith/",
         rel="alternate",
     )
-    fg.description("Clean RSS feed generated via GitHub Actions.")
+    fg.description("Clean full-text RSS feed generated via GitHub Actions.")
 
     for entry in parsed.entries[:MAX_ITEMS]:
-        original_url = entry.get("link", "")
+        url = entry.get("link", "")
         title = entry.get("title", "Untitled")
 
-        # Direct link through removepaywall.com (clean HTTPS bypass without search steps)
-        clean_url = (
-            f"https://removepaywall.com/{original_url}" if original_url else ""
-        )
-
         fe = fg.add_entry()
-        fe.id(entry.get("id", original_url))
+        fe.id(entry.get("id", url))
         fe.title(title)
-        fe.link(href=clean_url)
+        # Direct official article link (no third-party proxy sites)
+        fe.link(href=url)
 
         if "published" in entry:
             fe.published(entry.published)
 
-        # 1. Extract content/summary
+        # 1. Extract raw content/summary provided by feed
         raw_summary = entry.get("summary", entry.get("description", ""))
 
-        # 2. Extract image URL from feed enclosures or media tags
+        # 2. Extract lead image thumbnail
         image_url = None
         if "media_content" in entry and len(entry.media_content) > 0:
             image_url = entry.media_content[0].get("url")
@@ -57,7 +53,7 @@ def build_full_rss():
             if img_tag and img_tag.get("src"):
                 image_url = img_tag["src"]
 
-        # 3. Clean summary text snippet for description
+        # 3. Clean summary text for description preview
         soup_desc = BeautifulSoup(raw_summary, "html.parser")
         clean_text = soup_desc.get_text().strip()
         clean_text = re.sub(
@@ -67,7 +63,7 @@ def build_full_rss():
             clean_text if clean_text else "Click to read full article."
         )
 
-        # 4. Construct clean HTML content with lead thumbnail
+        # 4. Embed clean HTML content + thumbnail directly inside feed body
         content_html = ""
         if image_url:
             fe.enclosure(url=image_url, type="image/jpeg", length="0")
