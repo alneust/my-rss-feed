@@ -11,7 +11,6 @@ MAX_ITEMS = 5
 
 
 def fetch_full_article_content(page, url):
-    """Safely fetch full text using headless Chrome."""
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
         html_content = page.content()
@@ -49,25 +48,19 @@ def build_full_rss():
                 url = entry.get("link", "")
                 title = entry.get("title", "Untitled")
 
-                # REWRITE LINK HERE: Directs clicks to TXTify proxy instead of National Review
-                proxy_url = f"https://txtify.it/{url}"
-
                 fe = fg.add_entry()
                 fe.id(entry.get("id", url))
                 fe.title(title)
-                fe.link(href=proxy_url)
+                fe.link(href=url)
 
                 if "published" in entry:
                     fe.published(entry.published)
 
-                # Fetch full article text
                 full_body_html = fetch_full_article_content(page, url)
-
                 raw_summary = entry.get("summary", entry.get("description", ""))
                 if not full_body_html:
                     full_body_html = raw_summary
 
-                # Extract Lead Image
                 image_url = None
                 if "media_content" in entry and len(entry.media_content) > 0:
                     image_url = entry.media_content[0].get("url")
@@ -78,12 +71,10 @@ def build_full_rss():
                     if img_tag and img_tag.get("src"):
                         image_url = img_tag["src"]
 
-                # Create text summary for ticker
                 soup_desc = BeautifulSoup(full_body_html, "html.parser")
                 clean_text = soup_desc.get_text().strip()[:300] + "..."
                 fe.description(clean_text)
 
-                # Assign full content
                 content_html = ""
                 if image_url:
                     fe.enclosure(url=image_url, type="image/jpeg", length="0")
