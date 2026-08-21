@@ -14,19 +14,23 @@ def build_full_rss():
     fg = FeedGenerator()
     fg.load_extension("media")
     fg.id("https://www.nationalreview.com/author/wesley-j-smith/")
-    fg.title("Wesley J. Smith - National Review (Clean Feed)")
+    fg.title("Wesley J. Smith - National Review (Archive Feed)")
     fg.link(
         href="https://www.nationalreview.com/author/wesley-j-smith/",
         rel="alternate",
     )
-    fg.description("Unpaywalled clean RSS feed generated via GitHub Actions.")
+    fg.description("Paywall-free RSS feed generated via GitHub Actions.")
 
     for entry in parsed.entries[:MAX_ITEMS]:
         original_url = entry.get("link", "")
         title = entry.get("title", "Untitled")
 
-        # Route link through 12ft.io to bypass National Review's paywall when clicked
-        clean_url = f"https://12ft.io/{original_url}" if original_url else ""
+        # Route links through Archive.today to bypass paywalls reliably
+        clean_url = (
+            f"https://archive.today/newest/{original_url}"
+            if original_url
+            else ""
+        )
 
         fe = fg.add_entry()
         fe.id(entry.get("id", original_url))
