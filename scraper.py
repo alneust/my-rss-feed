@@ -14,20 +14,20 @@ def build_full_rss():
     fg = FeedGenerator()
     fg.load_extension("media")
     fg.id("https://www.nationalreview.com/author/wesley-j-smith/")
-    fg.title("Wesley J. Smith - National Review (Archive Feed)")
+    fg.title("Wesley J. Smith - National Review (Clean Feed)")
     fg.link(
         href="https://www.nationalreview.com/author/wesley-j-smith/",
         rel="alternate",
     )
-    fg.description("Paywall-free RSS feed generated via GitHub Actions.")
+    fg.description("Clean RSS feed generated via GitHub Actions.")
 
     for entry in parsed.entries[:MAX_ITEMS]:
         original_url = entry.get("link", "")
         title = entry.get("title", "Untitled")
 
-        # Route links through Archive.today to bypass paywalls reliably
+        # Route through a secure HTTPS unpaywall proxy
         clean_url = (
-            f"https://archive.today/newest/{original_url}"
+            f"https://www.removepaywall.com/search?url={original_url}"
             if original_url
             else ""
         )
@@ -40,10 +40,10 @@ def build_full_rss():
         if "published" in entry:
             fe.published(entry.published)
 
-        # 1. Extract content/summary
+        # 1. Extract raw content/summary
         raw_summary = entry.get("summary", entry.get("description", ""))
 
-        # 2. Extract image URL from feed enclosures or media tags
+        # 2. Extract thumbnail image
         image_url = None
         if "media_content" in entry and len(entry.media_content) > 0:
             image_url = entry.media_content[0].get("url")
@@ -59,7 +59,7 @@ def build_full_rss():
             if img_tag and img_tag.get("src"):
                 image_url = img_tag["src"]
 
-        # 3. Clean summary text snippet for description
+        # 3. Clean snippet for description
         soup_desc = BeautifulSoup(raw_summary, "html.parser")
         clean_text = soup_desc.get_text().strip()
         clean_text = re.sub(
