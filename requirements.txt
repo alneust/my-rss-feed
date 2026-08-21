@@ -1,0 +1,5 @@
+feedparser
+feedgen
+beautifulsoup4
+playwright
+readability-lxml
