@@ -2,18 +2,18 @@ import re
 from bs4 import BeautifulSoup
 import feedparser
 from feedgen.feed import FeedGenerator
-import requests
 
-# Direct author feed
 SOURCE_FEED = "https://www.nationalreview.com/author/wesley-j-smith/feed/"
 OUTPUT_FILE = "feed.xml"
 MAX_ITEMS = 10
 
 
 def build_full_rss():
+    # Parse National Review's official author RSS feed
     parsed = feedparser.parse(SOURCE_FEED)
 
     fg = FeedGenerator()
+    # Enable Media RSS extension for WordPress thumbnail support
     fg.load_extension("media")
     fg.id("https://www.nationalreview.com/author/wesley-j-smith/")
     fg.title("Wesley J. Smith - National Review")
@@ -22,14 +22,6 @@ def build_full_rss():
         rel="alternate",
     )
     fg.description("Clean RSS feed generated for WordPress.")
-
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/120.0.0.0 Safari/537.36"
-        )
-    }
 
     for entry in parsed.entries[:MAX_ITEMS]:
         url = entry.get("link", "")
@@ -43,37 +35,49 @@ def build_full_rss():
         if "published" in entry:
             fe.published(entry.published)
 
-        # 1. Extract content and description from source
+        # 1. Extract raw content/summary provided inside the feed
         raw_summary = entry.get("summary", entry.get("description", ""))
 
-        # 2. Extract lead thumbnail image
+        # 2. Extract image URL from feed enclosures or media tags
         image_url = None
-        if "enclosures" in entry and len(entry.enclosures) > 0:
+
+        # Check media content / media thumbnail tags
+        if "media_content" in entry and len(entry.media_content) > 0:
+            image_url = entry.media_content[0].get("url")
+        elif "media_thumbnail" in entry and len(entry.media_thumbnail) > 0:
+            image_url = entry.media_thumbnail[0].get("url")
+
+        # Check standard enclosures
+        if not image_url and "enclosures" in entry and len(entry.enclosures) > 0:
             image_url = entry.enclosures[0].get("href")
 
-        if not image_url and url:
-            try:
-                r = requests.get(url, headers=headers, timeout=10)
-                if r.status_code == 200:
-                    soup = BeautifulSoup(r.text, "html.parser")
-                    og_img = soup.find("meta", property="og:image")
-                    if og_img and og_img.get("content"):
-                        image_url = og_img["content"]
-            except Exception as e:
-                print(f"Error fetching image for {url}: {e}")
+        # Fallback: check inline <img> tags in the summary
+        if not image_url and raw_summary:
+            soup_img = BeautifulSoup(raw_summary, "html.parser")
+            img_tag = soup_img.find("img")
+            if img_tag and img_tag.get("src"):
+                image_url = img_tag["src"]
 
-        # 3. Clean text snippet
+        # 3. Clean up description for WordPress snippet
         soup_desc = BeautifulSoup(raw_summary, "html.parser")
-        clean_text = soup_desc.get_text()
+        clean_text = soup_desc.get_text().strip()
+
+        # Remove paywall and popup references from plain text
+        clean_text = re.sub(
+            r"Become a member.*", "", clean_text, flags=re.IGNORECASE
+        )
         fe.description(
             clean_text if clean_text else "Click to read full article."
         )
 
-        # 4. Format clean HTML content and thumbnails
+        # 4. Construct clean HTML content with thumbnail image
         content_html = ""
         if image_url:
+            # Set enclosure & Media RSS thumbnail tag for WordPress
             fe.enclosure(url=image_url, type="image/jpeg", length="0")
             fe.media.thumbnail(url=image_url)
+
+            # Prepend lead image directly into feed content
             content_html += f'<p><img src="{image_url}" style="max-width:100%; height:auto;" /></p>'
 
         content_html += f"<div>{raw_summary}</div>"
