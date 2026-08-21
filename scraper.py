@@ -25,11 +25,9 @@ def build_full_rss():
         original_url = entry.get("link", "")
         title = entry.get("title", "Untitled")
 
-        # Route through a secure HTTPS unpaywall proxy
+        # Direct link through removepaywall.com (clean HTTPS bypass without search steps)
         clean_url = (
-            f"https://www.removepaywall.com/search?url={original_url}"
-            if original_url
-            else ""
+            f"https://removepaywall.com/{original_url}" if original_url else ""
         )
 
         fe = fg.add_entry()
@@ -40,10 +38,10 @@ def build_full_rss():
         if "published" in entry:
             fe.published(entry.published)
 
-        # 1. Extract raw content/summary
+        # 1. Extract content/summary
         raw_summary = entry.get("summary", entry.get("description", ""))
 
-        # 2. Extract thumbnail image
+        # 2. Extract image URL from feed enclosures or media tags
         image_url = None
         if "media_content" in entry and len(entry.media_content) > 0:
             image_url = entry.media_content[0].get("url")
@@ -59,7 +57,7 @@ def build_full_rss():
             if img_tag and img_tag.get("src"):
                 image_url = img_tag["src"]
 
-        # 3. Clean snippet for description
+        # 3. Clean summary text snippet for description
         soup_desc = BeautifulSoup(raw_summary, "html.parser")
         clean_text = soup_desc.get_text().strip()
         clean_text = re.sub(
