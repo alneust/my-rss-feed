@@ -6,28 +6,7 @@
     <description>Full-text feed generated via Headless Chrome.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Mon, 12 Oct 2026 15:03:48 +0000</lastBuildDate>
-    <item>
-      <title>Coming to the U.N.: ‘Universal Declaration of the Rights of Nature’</title>
-      <link>https://www.nationalreview.com/corner/coming-to-the-u-n-universal-declaration-of-the-rights-of-nature/</link>
-      <description>Panama has proposed that the U.N. General Assembly negotiate and adopt a "Universal Declaration of the Rights of Nature." From the press release:
-In a historic development, the Government of Panama and For Nature have signed a memorandum of understanding to jointly advance the adoption of a Universa...</description>
-      <content:encoded><![CDATA[<p><img src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2025/01/un-logo.jpg?fit=527%2C307&ssl=1" style="max-width:100%; height:auto;" /></p><div><html><body><div><div class="
-          article-content
-          article-content--headless
-          article-content--teaser
-        "><p>Panama has proposed that the U.N. General Assembly negotiate and adopt a "Universal Declaration of the Rights of Nature." From the <a href="https://www.freep.com/press-release/story/177546/panama-and-for-nature-sign-strategic-agreement-advancing-universal-declaration-of-the-rights-of-nature-at-united-nations/" rel="noopener">press release</a>:</p>
-<blockquote><p>In a historic development, the Government of Panama and For Nature have signed a memorandum of understanding to jointly advance the adoption of a Universal Declaration of the Rights of Nature before the United Nations General Assembly, marking a significant milestone in the growing global movement to recognize ecosystems and species as rights-bearing entities.</p>
-<p>The initiative is being funded in full by the Alfred Kobacker and Elizabeth Trimbach Fund (AKET Fund) in partnership with the National Geographic Society, reflecting </p></blockquote>
-<p> ...</p>
-</div></div></body></html></div>]]></content:encoded>
-      <guid isPermaLink="false">https://www.nationalreview.com/?post_type=blog-post&amp;p=2047314</guid>
-      <enclosure url="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2025/01/un-logo.jpg?fit=527%2C307&amp;ssl=1" length="0" type="image/jpeg"/>
-      <pubDate>Wed, 30 Sep 2026 19:43:32 +0000</pubDate>
-      <media:group>
-        <media:thumbnail url="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2025/01/un-logo.jpg?fit=527%2C307&amp;ssl=1"/>
-      </media:group>
-    </item>
+    <lastBuildDate>Tue, 13 Oct 2026 00:27:38 +0000</lastBuildDate>
     <item>
       <title>AI ‘Claude’ Can Never Be a Person</title>
       <link>https://www.nationalreview.com/corner/ai-claude-can-never-be-a-person/</link>
@@ -74,9 +53,8 @@ In a historic development, the Government of Panama and For Nature have signed a
     <item>
       <title>The Drive to Destroy Catholic Health Care in Canada (and Here)</title>
       <link>https://www.nationalreview.com/corner/the-drive-to-destroy-catholic-health-care-in-canada-and-here/</link>
-      <description>Mercy, justice, and an examination of conscience....</description>
-      <content:encoded><![CDATA[<p><img src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2020/12/doctor-stethoscope-pocket.jpg?fit=620%2C361&ssl=1" style="max-width:100%; height:auto;" /></p><div><html><body><div><div class="post-list-article__excerpt"><span><p>Mercy, justice, and an examination of conscience.</p>
-</span></div></div></body></html></div>]]></content:encoded>
+      <description>&lt;!----&gt;Close this consent banner&lt;!----&gt;       This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link:   Privacy Policy    Manage Preferences...</description>
+      <content:encoded><![CDATA[<p><img src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2020/12/doctor-stethoscope-pocket.jpg?fit=620%2C361&ssl=1" style="max-width:100%; height:auto;" /></p><div><html><body><div><div role="dialog" aria-modal="false" id="4b5fc495-21af-4aa7-8b4b-bc92bdd471af" aria-label="Cookie Consent Banner" aria-describedby="4b5fc495-21af-4aa7-8b4b-bc92bdd471af__label" class=" osano-cm-window__dialog osano-cm-dialog osano-cm-dialog--hidden osano-cm-dialog--position_bottom osano-cm-dialog--type_bar ">  <button class=" osano-cm-dialog__close osano-cm-close " aria-label="Close this consent banner"> <svg viewbox="0 0 20 20" aria-hidden="true" focusable="false"> <title>&lt;!----&gt;Close this consent banner&lt;!----&gt;</title> <line role="presentation" x1="2" y1="2" x2="18" y2="18"></line> <line role="presentation" x1="2" y1="18" x2="18" y2="2"></line> </svg> </button>  <p class=" osano-cm-dialog__content osano-cm-content ">   <span id="4b5fc495-21af-4aa7-8b4b-bc92bdd471af__label" class=" osano-cm-content__message osano-cm-message "> This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link:  </span>    <a rel="noopener" tabindex="0" href="/privacy-policy" target="_blank" class=" osano-cm-storage-policy osano-cm-content__link osano-cm-link " aria-describedby="osano-cm-aria.newWindow">Privacy Policy</a>     </p> <p class=" osano-cm-dialog__buttons osano-cm-buttons osano-cm-buttons--disabled "> <button class=" osano-cm-manage osano-cm-buttons__button osano-cm-button osano-cm-button--type_manage " tabindex="0"> Manage Preferences </button> </p>  </div>     </div></body></html></div>]]></content:encoded>
       <guid isPermaLink="false">https://www.nationalreview.com/?post_type=blog-post&amp;p=2052784</guid>
       <enclosure url="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2020/12/doctor-stethoscope-pocket.jpg?fit=620%2C361&amp;ssl=1" length="0" type="image/jpeg"/>
       <pubDate>Thu, 08 Oct 2026 00:27:27 +0000</pubDate>
@@ -108,6 +86,36 @@ Let me explain. Of course, I am gratified that mental illness will not become gr
       <pubDate>Fri, 09 Oct 2026 11:14:26 +0000</pubDate>
       <media:group>
         <media:thumbnail url="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2024/12/euthanasia.jpg?fit=527%2C307&amp;ssl=1"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Belgium Expands Killable Caste While Euthanasia Cases Increase</title>
+      <link>https://www.nationalreview.com/corner/belgium-expands-killable-cast-while-euthanasia-cases-increase/</link>
+      <description>I still marvel at people who think–even after decades of experience with these laws–that legalizing assisted suicide or euthanasia will remain limited to the few for whom nothing else can be done medically to prevent suffering. Not only is it not true, but it is never intended by euthanasia enthusia...</description>
+      <content:encoded><![CDATA[<p><img src="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/05/empty-hospital-bed-2.jpg?fit=617%2C360&ssl=1" style="max-width:100%; height:auto;" /></p><div><html><body><div><div class="article-content article-content--headless"><p>I still marvel at people who think–even after decades of experience with these laws–that legalizing assisted suicide or euthanasia will remain limited to the few for whom nothing else can be done medically to prevent suffering. Not only is it not true, but it is never intended by euthanasia enthusiasts to be so constrained. Indeed, wherever killing as an answer to suffering is legalized, the numbers so dispatched continually rise, the guidelines expand, and euthanasia or suicide as a means of death becomes societally normalized.</p>
+
+
+<p>In Belgium, that pattern continues. The Belgian Federal Commission for the Control and Evaluation of Euthanasia <a href="https://consultativebodies.health.belgium.be/sites/default/files/documents/FCCEE-Press%20release%2820261002%29%20-%20Report%202024-2025.pdf" data-testid="standard-link" target="_blank" rel="noopener">just issued a press release</a> about its published euthanasia statistics for 2024–2025. A few observations:</p>
+<ul>
+<li>As I perused the statistics, I was struck by how bloodless and stiflingly bureaucratic this killing machine has become. What was it that the philosopher Hanna Arendt said about the <a href="https://philosophybreak.com/articles/hannah-arendt-on-standing-up-to-the-banality-of-evil/" data-testid="standard-link" target="_blank" rel="noopener">banality of evil</a>?</li>
+<li>In 2003, there were 259 euthanasia killings. By 2023, there were 3,423, and in 2025, a whopping 4,487, a 31 percent increase from 2023. There will be even more this year, only to be topped every year thereafter going forward. In fact, only during the year of Covid in 2020 did Belgium record fewer euthanasia killings from one year to the next.</li>
+<li>In 2024–2025, 75.8 percent of the killings were of patients whose deaths were “within the foreseeable future.” That’s not the same thing at all as terminally ill. The rest — 24.2 percent — of the deaths were of people who were not anywhere near a natural death.</li>
+<li>Two of the killings were for minors under age 18. Expect pediatric euthanasia to increase going forward. Once killing is redefined as a medical “treatment,” how do you deny it to children?</li>
+<li>Fifteen were by “advance request.” This means incompetent people were killed who could not consent legally to being euthanized at the times of their deaths, and probably could not change their minds about being dispatched either because they were not legally capable of making their own medical decisions.</li>
+<li>One hundred twenty-nine people with mental illnesses who were not otherwise ill were dispatched. That’s a little less than one every 3 days. Only 9 of these were killed by psychiatrists, meaning doctors who do not specialize in treating mental illnesses killed the rest.</li>
+<li>Patients (536) were even euthanized in palliative care units. Killing isn’t palliation properly understood, but then, euthanasia corrupts everything it touches.</li>
+<li>Thousands (2592) of patients were dispatched in hospitals during the two years of the report. Some of these were for the purpose of <a href="https://www.discovery.org/a/25267/" data-testid="standard-link" target="_blank" rel="noopener">organ harvesting</a>, but the number of such cases is not discussed.</li>
+<li>Most of the euthanasia killings (63.5 percent) were carried out by general practitioners. GPs may not know all of the treatment options for serious diseases that require specialized care. A startling 48.4 percent of the killing doctors had no specialized training in end-of-life care.</li>
+<li>Many more Belgians were probably killed by doctors than the report indicates since <a data-testid="dynamic-link" target="_blank" rel="noopener" href="/corner/doctors-induce-twenty-five-percent-of-dutch-deaths/?utm_campaign=trueanthem&amp;utm_content=5c46ea5704d3">terminal sedations</a> are not included in euthanasia statistics.</li>
+<li>No policy is perfectly carried out, yet zero doctors were reported to courts for abuses. They rarely are anywhere euthanasia and assisted suicide are allowed. And on the few occasions when doctors have been reported, medical associations objected loudly because such cases could have a chilling effect on doctors’ willingness to kill patients.</li>
+</ul>
+<p>The same pattern is happening here too, albeit more slowly. But if things keep up the way they are, we will — <a data-testid="dynamic-link" target="_blank" rel="noopener" href="/corner/canadas-euthanasia-horrors-are-accelerating/">like our close cultural cousins</a> in Canada — embrace the culture of death with great enthusiasm.</p>
+</div></div></body></html></div>]]></content:encoded>
+      <guid isPermaLink="false">https://www.nationalreview.com/?post_type=blog-post&amp;p=2055732</guid>
+      <enclosure url="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/05/empty-hospital-bed-2.jpg?fit=617%2C360&amp;ssl=1" length="0" type="image/jpeg"/>
+      <pubDate>Mon, 12 Oct 2026 18:44:54 +0000</pubDate>
+      <media:group>
+        <media:thumbnail url="https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2026/05/empty-hospital-bed-2.jpg?fit=617%2C360&amp;ssl=1"/>
       </media:group>
     </item>
   </channel>
