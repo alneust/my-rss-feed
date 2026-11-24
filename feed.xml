@@ -6,19 +6,7 @@
     <description>Full-text feed generated via Headless Chrome.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Tue, 24 Nov 2026 09:26:41 +0000</lastBuildDate>
-    <item>
-      <title>The Coming ‘Nature Rights’ Tar-Pit Bureaucratic Nightmare</title>
-      <link>https://www.nationalreview.com/corner/the-coming-nature-rights-tar-pit-bureaucratic-nightmare</link>
-      <description>The “nature rights” movement would grant personhood and the “rights to exist, persist, maintain and regenerate its vital cycles, structure, functions and its processes in evolution” to geological features, ecological systems, flora and fauna, and indeed all that is. Enforcement would be a nightmare....</description>
-      <content:encoded><![CDATA[<p><img src="https://www.nationalreview.com/images/scms/yu68q2re/production/9689999dcc0989ed1e69947d988af00bbb1a3712-2057x1200.jpg?w=600" style="max-width:100%; height:auto;" /></p><div><html><body><div><div class="article-text-scale flex flex-col gap-6 article-body article-content"><p class="body-lg-regular">The “nature rights” movement would grant personhood and the “<a class="underline underline-offset-2" target="_blank" rel="noopener noreferrer" href="https://www.acton.org/religion-liberty/volume-28-number-3/return-nature-worship">rights to exist</a>, persist, maintain and regenerate its vital cycles, structure, functions and its processes in evolution” to geological features, ecological systems, flora and fauna, and indeed all that is. </p><p class="body-lg-regular">Enforcement would be a nightmare. Most <mark class="bg-bg-base-secondary rounded-xs px-0.5 text-inherit box-decoration-clone"><span role="button" tabindex="0" aria-label="See what National Review has written about Rights of nature" class="focus-ring cursor-pointer underline decoration-dotted underline-offset-4" type="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed">nature rights schemes</span></mark> grant universal court standing — meaning that anyone who believes that nature’s rights are being violated can sue. Other proposals appoint commissions to determine whether proposed or past human endeavors violate nature’s rights. </p></div></div></body></html></div>]]></content:encoded>
-      <guid isPermaLink="false">https://www.nationalreview.com/?p=33e558b4-5a7c-4e2d-be48-2e598115df2a</guid>
-      <enclosure url="https://www.nationalreview.com/images/scms/yu68q2re/production/9689999dcc0989ed1e69947d988af00bbb1a3712-2057x1200.jpg?w=600" length="0" type="image/jpeg"/>
-      <pubDate>Fri, 13 Nov 2026 20:44:09 +0000</pubDate>
-      <media:group>
-        <media:thumbnail url="https://www.nationalreview.com/images/scms/yu68q2re/production/9689999dcc0989ed1e69947d988af00bbb1a3712-2057x1200.jpg?w=600"/>
-      </media:group>
-    </item>
+    <lastBuildDate>Tue, 24 Nov 2026 22:12:44 +0000</lastBuildDate>
     <item>
       <title>Chinese Surgeons Who Kill Prisoners by Organ-Harvesting Face No Consequences</title>
       <link>https://www.nationalreview.com/corner/chinese-surgeons-who-kill-prisoners-by-organ-harvesting-face-no-consequences</link>
@@ -65,6 +53,18 @@
       <pubDate>Mon, 23 Nov 2026 01:32:15 +0000</pubDate>
       <media:group>
         <media:thumbnail url="https://www.nationalreview.com/images/scms/yu68q2re/production/cb5cb5164211a8b9e2a02a4fa275ed2c4576d8f2-2057x1200.jpg?w=600"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Do Organ-Procurement Organizations Own Donors’ Bodies?</title>
+      <link>https://www.nationalreview.com/corner/do-organ-procurement-organizations-own-donors-bodies</link>
+      <description>I have been writing frequently about organ-transplant controversies of late. That hasn’t been by design but because of a cascade of stories that I think will have an impact on the ethics and public perception of this important medical sector.Here’s another that just broke. In 2016, Emanise Timothee ...</description>
+      <content:encoded><![CDATA[<p><img src="https://www.nationalreview.com/images/scms/yu68q2re/production/2022353d867d4867113aa7eeba16bfaeee0aeae9-2057x1200.jpg?w=600" style="max-width:100%; height:auto;" /></p><div><html><body><div><div class="article-text-scale flex flex-col gap-6 article-body article-content"><p class="body-lg-regular">I have been writing frequently about organ-transplant controversies of late. That hasn’t been by design but because of a cascade of stories that I think will have an impact on the ethics and public perception of this important medical sector.</p><p class="body-lg-regular">Here’s another that just broke. In 2016, Emanise Timothee registered in New York as an organ donor. She was just declared brain dead in the Baylor University Hospital in Texas. But when her family was approached about commencing with the donation, they said no. The hospital refused to force the issue and was sued by the organ-procurement organization in charge of the donation to force the procurement. <a class="underline underline-offset-2" target="_blank" rel="noopener noreferrer" href="https://www.dallasnews.com/news/courts/article/baylor-university-organ-donor-22543835.php">From the <em>Dallas Morning News</em> story</a>:</p></div></div></body></html></div>]]></content:encoded>
+      <guid isPermaLink="false">https://www.nationalreview.com/?p=470449f2-e2ee-47ab-b78f-f8af6d9e76bc</guid>
+      <enclosure url="https://www.nationalreview.com/images/scms/yu68q2re/production/2022353d867d4867113aa7eeba16bfaeee0aeae9-2057x1200.jpg?w=600" length="0" type="image/jpeg"/>
+      <pubDate>Tue, 24 Nov 2026 17:46:45 +0000</pubDate>
+      <media:group>
+        <media:thumbnail url="https://www.nationalreview.com/images/scms/yu68q2re/production/2022353d867d4867113aa7eeba16bfaeee0aeae9-2057x1200.jpg?w=600"/>
       </media:group>
     </item>
   </channel>
